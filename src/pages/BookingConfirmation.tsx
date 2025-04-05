@@ -5,6 +5,34 @@ import { useAuth } from '../context/AuthContext';
 import { useBooking } from '../context/BookingContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+// import axios from 'axios';
+
+// const BookingList = () => {
+//     const [bookings, setBookings] = useState([]);
+
+//     useEffect(() => {
+//         axios.get('http://localhost/bikewash_backend/get_bookings.php')
+//             .then(response => {
+//                 if (response.data.status === "success") {
+//                     setBookings(response.data.data);
+//                 }
+//             })
+//             .catch(error => console.error('Error fetching bookings:', error));
+//     }, []);
+
+//     return (
+//         <div>
+//             <h2>Bookings</h2>
+//             <ul>
+//                 {bookings.map(booking => (
+//                     <li key={booking.id}>{booking.user} - {booking.shop_name}</li>
+//                 ))}
+//             </ul>
+//         </div>
+//     );
+// };
+
+// export default BookingList;
 
 const BookingConfirmation: React.FC = () => {
   const navigate = useNavigate();
