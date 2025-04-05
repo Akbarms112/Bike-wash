@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Wash Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>Bike Wash Booking</h1>
+    </nav>
+
+    <div class="container">
+        <section class="form">
+            <form action="find_shop.php" method="POST">
+                <h2>Your Information</h2>
+                <input type="text" name="username" placeholder="Full Name" required>  
+                <input type="tel" name="phone" placeholder="Phone Number" required>  
+                <input type="text" name="address" placeholder="Enter Address (e.g. MG Road, Bengaluru)" required>
+            
+                <h2>Bike Details</h2>
+                <input type="text" name="bike_model" placeholder="Bike Name/Model" required>
+                <input type="text" name="bike_number" placeholder="Bike Number" required>
+                <input type="text" name="bike_color" placeholder="Bike Color" required>
+            
+                <button type="submit">Find Nearby Centers</button>
+            </form>
+            
+            
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Bike Wash Booking</p>
+    </footer>
+
+</body>
+</html>
